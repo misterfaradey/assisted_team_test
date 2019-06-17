@@ -1,0 +1,7 @@
+[main]
+files_oneway = ["RS_ViaOW.xml"]
+files_return = ["RS_Via-3.xml"]
+
+[user_server]
+gin_mode = "release" #can be debug, release, test
+address = ":8080"

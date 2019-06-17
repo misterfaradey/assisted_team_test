@@ -1,0 +1,62 @@
+#Какие варианты перелёта из DXB в BKK мы получили?
+GET http://0.0.0.0:8080/api/flights/all?from=DXB&to=BKK&oneway=false
+
+###
+
+GET http://0.0.0.0:8080/api/flights/all?from=DXB&to=BKK&oneway=true
+
+###
+
+GET http://0.0.0.0:8080/api/flights/all?from=DXB&to=BKK&price=1&type=SingleAdult&oneway=false
+
+###
+
+GET http://0.0.0.0:8080/api/flights/all?from=DXB&to=BKK&price=1&type=SingleAdult&oneway=true
+
+###
+
+GET http://0.0.0.0:8080/api/flights/all?from=DXB&to=BKK&price=1&type=SingleChild
+
+###
+
+GET http://0.0.0.0:8080/api/flights/all?from=DXB&to=BKK&price=1&type=SingleChild&oneway=true
+
+###
+
+#Самый дорогой/дешёвый, быстрый/долгий и оптимальный варианты
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=max_price
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=max_price&oneway=true
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=min_price
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=min_price&oneway=true
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=max_time
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=max_time&oneway=true
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=min_time
+
+###
+#примем за формулу оптимальности стоимость часа перелета как 5 SGD (1h = 5SGD ≈ 235RUB)
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=optimal
+
+###
+
+GET http://0.0.0.0:8080/api/flight?from=DXB&to=BKK&sort=optimal&oneway=true
+
+###
+
