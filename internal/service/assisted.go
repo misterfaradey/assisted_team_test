@@ -3,8 +3,8 @@ package service
 import (
 	"encoding/xml"
 	"errors"
+	"github.com/misterfaradey/assisted_team_test/internal/dto"
 	"io/ioutil"
-	"local/test-tasks/assisted_team/internal/dto"
 	"log"
 	"os"
 	"sort"

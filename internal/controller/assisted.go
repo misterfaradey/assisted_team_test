@@ -2,9 +2,9 @@ package controller
 
 import (
 	"errors"
-	"local/test-tasks/assisted_team/internal/dto"
-	"local/test-tasks/assisted_team/internal/server"
-	"local/test-tasks/assisted_team/internal/service"
+	"github.com/misterfaradey/assisted_team_test/internal/dto"
+	"github.com/misterfaradey/assisted_team_test/internal/server"
+	"github.com/misterfaradey/assisted_team_test/internal/service"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

@@ -1,7 +1,7 @@
 package config
 
 import (
-	"local/test-tasks/assisted_team/internal/server"
+	"github.com/misterfaradey/assisted_team_test/internal/server"
 	"strings"
 	"time"
 
